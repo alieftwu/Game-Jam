@@ -13,19 +13,15 @@ public class DialogueTrigger : MonoBehaviour
     {
         playerInRange = false;
         visualCue.SetActive(false);
-        if(InputManager.GetInstance().GetInteractPressed())
-        {
-            Debug.Log(inkJSON.text);
-        }
     }
     private void Update()
     {
-        if (playerInRange)
+        if (playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying)
         {
             visualCue.SetActive(true);
             if(InputManager.GetInstance().GetInteractPressed())
             {
-                Debug.Log(inkJSON.text);
+                DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
             }
         }
         else

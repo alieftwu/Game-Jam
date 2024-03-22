@@ -22,6 +22,11 @@ public class PlayerMovement : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        if (DialogueManager.GetInstance().dialogueIsPlaying)
+        {
+            return;
+        }
+        movInput = InputManager.GetInstance().GetMoveDirection();
         rb.velocity = movInput * speed;
         
     }
