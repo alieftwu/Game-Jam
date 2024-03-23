@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class WinLoseTrigger : MonoBehaviour
 {
 
-   public int votesRequired = 4; // Number of votes required to win
+   public int votesRequired = 8; // Number of votes required to win
     private string sceneToLoad;
     private bool enterAllowed;
     private void OnTriggerEnter2D(Collider2D collision)
