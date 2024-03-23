@@ -8,20 +8,23 @@ public class DialogueTrigger : MonoBehaviour
     [SerializeField] private GameObject visualCue;
     [Header("Ink JSON")]
     [SerializeField] private TextAsset inkJSON;
+    private bool dialogueTriggered;
     private bool playerInRange;
     private void Awake()
     {
         playerInRange = false;
+        dialogueTriggered = false;
         visualCue.SetActive(false);
     }
     private void Update()
     {
-        if (playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying)
+        if (playerInRange && !dialogueTriggered && !DialogueManager.GetInstance().dialogueIsPlaying)
         {
             visualCue.SetActive(true);
             if(InputManager.GetInstance().GetInteractPressed())
             {
                 DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
+                dialogueTriggered = true;
             }
         }
         else

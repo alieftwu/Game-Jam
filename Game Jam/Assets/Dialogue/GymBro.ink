@@ -8,5 +8,5 @@ What's up bro, I'm just getting my daily pump in. You must be running for mayor.
     Um not quite. You won't be getting my vote, but I'll hit you up for a shoulder day. Goodbye!
     ->DONE
 +[Pectorals]
-    Nice job! We gotta workout sometime man, you got my vote...and my number.
+    Correct! We gotta workout sometime man, you got my vote...and my number.
 ->END

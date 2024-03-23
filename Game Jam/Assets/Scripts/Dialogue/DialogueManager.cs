@@ -17,6 +17,10 @@ public class DialogueManager : MonoBehaviour
     private Story currentStory;
     public bool dialogueIsPlaying {get; private set; }
     private static DialogueManager instance;
+    public int votesCollected = 0;
+
+    [Header("Vote Counter UI")]
+    [SerializeField] public TextMeshProUGUI voteCounterText; // Text to display votes 
 
     private void Awake()
     {
@@ -80,6 +84,18 @@ public class DialogueManager : MonoBehaviour
         {
             //set text for the current dialogue line
             dialogueText.text = currentStory.Continue();
+            if(dialogueText.text.Contains("Correct") || dialogueText.text.Contains("correct"))
+                {
+                    Debug.Log("test 2 in conditional");
+                    votesCollected++; // Increment votes collected
+                    Debug.Log("Votes collected: " + votesCollected);
+                    UpdateVoteCounter();
+                }
+            else
+                {
+                    Debug.Log("test 2 failed");
+                }
+            //Debug.Log("current story: " + dialogueText.text);
             //display choices, if any, for this dialogue line
             DisplayChoices();
         }
@@ -126,9 +142,17 @@ public class DialogueManager : MonoBehaviour
 
     public void MakeChoice(int choiceIndex)
     {
+        Choice selectedChoice = currentStory.currentChoices[choiceIndex];
+        Debug.Log("Selected Choice: " + selectedChoice.text); // Log the selected choice for debugging
+        //Check if the selected choice is correct
         currentStory.ChooseChoiceIndex(choiceIndex);
         InputManager.GetInstance().RegisterSubmitPressed();
         ContinueStory();
+    }
+    void UpdateVoteCounter()
+    {
+        //Update the UI text to display the current votes collected
+        voteCounterText.text = "Votes: " + votesCollected;
     }
     
 }

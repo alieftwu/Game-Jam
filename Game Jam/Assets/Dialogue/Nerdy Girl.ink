@@ -8,5 +8,5 @@ Looking for votes eh? I only vote for politicians who know their math. Answer th
     How pathetic, you don't even know simple math. No vote for you!
     ->DONE
 +[70 times]
-    Wow you sure know your math. Impressive! You got my vote!
+    Correct! You sure know your math. Impressive! You got my vote!
 ->END
