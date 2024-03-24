@@ -1,6 +1,7 @@
 ->main
 === main ===
-I am the famous Chef Gordo, and here I am waiting for a taxi. Hey you, I hear you're running for mayor yes? Answer this, what is the name of the famously angry British chef who is also my business partner?
+I am THE famous Chef Gordo, and here I am waiting for a taxi like a commoner.
+Hey you, I hear you're running for mayor yes? Answer this, what is the name of the famously angry British chef who is also my business partner?
 +[Guy Fieri]
     Not quite. You should learn your chefs before you become mayor.
     ->DONE
