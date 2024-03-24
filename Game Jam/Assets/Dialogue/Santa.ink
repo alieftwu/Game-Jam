@@ -1,6 +1,7 @@
 ->main
 === main ===
-I hate my jo-- oh! HO HO HO what is your biggest wish?
+I hate my jo-- oh!
+HO HO HO what is your biggest wish this year?
 +[For everyone to be happy in this world]
     Oh what load of bul-- HO HO HO how sweet of you!
     ->DONE

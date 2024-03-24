@@ -1,6 +1,7 @@
 ->main
 === main ===
-This stupid car! I swear it breaks down at least once a week. I hear you're running for mayor. I have a question for you. I am a big car guy. Are you familiar with the gear shift?
+This stupid car! I swear it breaks down at least once a week. 
+Oh hi there! I hear you're running for mayor. I have a question for you. I am a big car guy. Are you familiar with the gear shift?
 +[You mean the PRNDL?]
     The what? NO! It's Park, Reverse, Neutral, Drive, and LOW! What has this town come to. You are not getting my vote.  
     ->DONE

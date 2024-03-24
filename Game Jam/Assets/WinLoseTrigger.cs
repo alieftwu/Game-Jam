@@ -40,7 +40,7 @@ public class WinLoseTrigger : MonoBehaviour
 
     private void Update()
     {
-        if(enterAllowed && Input.GetKey(KeyCode.Return))
+        if(enterAllowed && Input.GetKey(KeyCode.E))
         {
             SceneManager.LoadScene(sceneToLoad);
         }
