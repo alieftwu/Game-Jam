@@ -486,6 +486,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 2254001530954735815, guid: f4a6ee5a8d5b2c94d8f0974d94d1fcfa, type: 3}
+      propertyPath: m_text
+      value: 'You are running for mayor and you must convince the citizens of the
+        town to vote for you ano not your opponent! Explore the town, talk to citizens,
+        and answer their questions correctly so they vote for you! There are 10 citizens
+        and you must get at least 8 votes in order to win! Once you talk to all the
+        citizens, head back to the city hall entrance to see if you won the election!
+
+        Controls:
+
+        W
+        A S D : move
+
+        i : Interact with townies
+
+        arrow keys : sift
+        through dialogue options
+
+        space : select option + continue dialogue
+
+        e
+        : enter city hall'
+      objectReference: {fileID: 0}
     - target: {fileID: 3415876220723413028, guid: f4a6ee5a8d5b2c94d8f0974d94d1fcfa, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -548
